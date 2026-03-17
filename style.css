@@ -20,6 +20,7 @@ body {
     color: var(--white);
     overflow-x: hidden;
     line-height: 1.7;
+    padding-top: 100px; 
 }
 
 
@@ -30,15 +31,9 @@ body {
     width: 100%;
     padding: 20px 50px;
     z-index: 1000;
-    transition: all 0.3s;
     background: rgba(10, 10, 10, 0.98);
     backdrop-filter: blur(10px);
-}
-
-.navbar.scrolled {
-    padding: 15px 50px;
-    background: rgba(10, 10, 10, 0.98);
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+   
 }
 
 .nav-container {
@@ -50,14 +45,13 @@ body {
     position: relative;
 }
 
-/* Logo Styles */
+
 .logo {
     display: flex;
     align-items: center;
     gap: 20px;
     position: relative;
     z-index: 1001;
-    transition: all 0.3s;
 }
 
 .logo-icon {
@@ -71,7 +65,6 @@ body {
     align-items: center;
     justify-content: center;
     padding: 10px;
-    transition: all 0.3s;
 }
 
 .logo-icon-mini {
@@ -80,11 +73,6 @@ body {
     border: 2px solid var(--gold);
     border-radius: 5px;
     margin-right: 10px;
-}
-
-.navbar.scrolled .logo-icon {
-    width: 50px;
-    height: 50px;
 }
 
 .logo-icon svg {
@@ -112,14 +100,6 @@ body {
     color: var(--gold);
     line-height: 1.4;
     margin-top: 3px;
-}
-
-.navbar.scrolled .logo-main {
-    font-size: 22px;
-}
-
-.navbar.scrolled .logo-sub {
-    font-size: 9px;
 }
 
 /* Nav Links */
@@ -159,13 +139,13 @@ body {
     width: 100%;
 }
 
-/* Hero Section - ADD PADDING TO PREVENT OVERLAP */
+
 .hero {
     height: 100vh;
     position: relative;
     display: flex;
     align-items: center;
-    padding: 100px 50px 50px;
+    padding: 0 50px;
     overflow: hidden;
 }
 
@@ -261,7 +241,7 @@ body {
     transform: translate(-50%, -50%);
 }
 
-/* Section Container */
+
 .section-container {
     max-width: 1400px;
     margin: 0 auto;
@@ -282,7 +262,7 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
-/* About Section */
+
 .about {
     background: var(--black);
 }
@@ -375,7 +355,7 @@ body {
     margin-top: 2px;
 }
 
-/* Experience Section */
+
 .experience {
     background: var(--dark);
 }
@@ -395,7 +375,7 @@ body {
     text-align: center;
 }
 
-/* Competencies Section */
+
 .competencies {
     background: var(--black);
 }
@@ -514,7 +494,7 @@ body {
     font-weight: bold;
 }
 
-/* Partners Marquee Section */
+
 .partners-marquee-section {
     background: var(--white);
     padding: 80px 0;
@@ -730,7 +710,7 @@ body {
     color: var(--gold);
 }
 
-/* Footer */
+
 .footer {
     background: var(--dark);
     padding: 40px 50px;
@@ -762,7 +742,7 @@ body {
     margin-left: 30px;
 }
 
-/* Responsive - MOBILE FIX */
+
 @media (max-width: 1200px) {
     .about-grid {
         grid-template-columns: 1fr;
@@ -786,13 +766,6 @@ body {
 @media (max-width: 768px) {
     .navbar {
         padding: 15px 30px;
-        position: fixed;
-        top: 0;
-        width: 100%;
-    }
-    
-    .navbar.scrolled {
-        padding: 10px 30px;
     }
     
     .logo-icon {
@@ -813,7 +786,7 @@ body {
     }
     
     .hero {
-        padding: 120px 30px 50px;
+        padding: 0 30px;
     }
     
     .hero-title {
