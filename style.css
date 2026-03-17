@@ -22,7 +22,7 @@ body {
     line-height: 1.7;
 }
 
-/* Navbar */
+/* Navbar - FIXED POSITION */
 .navbar {
     position: fixed;
     top: 0;
@@ -31,7 +31,7 @@ body {
     padding: 20px 50px;
     z-index: 1000;
     transition: all 0.3s;
-    background: rgba(10, 10, 10, 0.95);
+    background: rgba(10, 10, 10, 0.98);
     backdrop-filter: blur(10px);
 }
 
@@ -159,13 +159,13 @@ body {
     width: 100%;
 }
 
-/* Hero Section */
+/* Hero Section - ADD PADDING TO PREVENT OVERLAP */
 .hero {
     height: 100vh;
     position: relative;
     display: flex;
     align-items: center;
-    padding: 0 50px;
+    padding: 100px 50px 50px;
     overflow: hidden;
 }
 
@@ -762,7 +762,7 @@ body {
     margin-left: 30px;
 }
 
-/* Responsive */
+/* Responsive - MOBILE FIX */
 @media (max-width: 1200px) {
     .about-grid {
         grid-template-columns: 1fr;
@@ -786,6 +786,9 @@ body {
 @media (max-width: 768px) {
     .navbar {
         padding: 15px 30px;
+        position: fixed;
+        top: 0;
+        width: 100%;
     }
     
     .navbar.scrolled {
@@ -810,7 +813,7 @@ body {
     }
     
     .hero {
-        padding: 0 30px;
+        padding: 120px 30px 50px;
     }
     
     .hero-title {
